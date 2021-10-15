@@ -236,13 +236,25 @@ html {
   overflow: hidden;
 }
 
+*, h1 {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #2E2E35;
 }
 
 li {
   list-style: none;
-  color: #2E2E35;
+}
+
+button {
+  color: #800000;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #800000;
+  padding: 5px 10px;
+  text-transform: uppercase;
 }
 
 html {
@@ -258,4 +270,64 @@ a {
 
 p {
   font-family: "Nunito", sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav ul li {
+  margin-right: 10px;
+}
+
+.hero {
+  height: calc(100vh - 50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.title, .intro {
+  width: 300px;
+  height: 80vh;
+}
+
+.heroImage {
+  height: 80vh;
+  width: calc(100% - 600px);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.circle {
+  background-color: #2B2B34;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  z-index: -1;
 }

@@ -1,0 +1,32 @@
+.hero {
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.title, .intro {
+    width: 300px;
+    height: 80vh;
+}
+
+.heroImage {
+    height: 80vh;
+    width: calc(100% - 600px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+
+.circle {
+    background-color: $darkFill;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    z-index: -1;
+}

@@ -1,13 +1,26 @@
 $accentColor: #800000;
 $lighter: #34343B;
 $darker: #2E2E35;
+$darkFill: #2B2B34;
 
+*, h1 {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: $darker;
 }
 
+
 li {
     list-style: none;
-    color: $darker;
+}
+
+button {
+    color: $accentColor;
+    background-color: rgba($color: #000000, $alpha: 0);
+    border: 2px solid $accentColor;
+    padding: 5px 10px;
+    text-transform: uppercase;
 }
