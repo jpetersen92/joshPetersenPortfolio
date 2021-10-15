@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&display=swap');
+
+$primary: 'Open Sans', sans-serif;
+$secondary: 'Nunito', sans-serif;
+$fontFill: #DADADA;
+
+html {
+    font-size: 125%;
+    font-family: $primary;
+    color: $fontFill;
+}
+
+a {
+    text-decoration: none;
+    color: $fontFill;
+}
+
+p {
+    font-family: $secondary;
+}
