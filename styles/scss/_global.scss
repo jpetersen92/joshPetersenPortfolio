@@ -1,7 +1,10 @@
 $accentColor: #800000;
+$secondAccentColor: #E4AA48;
 $lighter: #34343B;
 $darker: #2E2E35;
 $darkFill: #2B2B34;
+$fontFill: #DADADA;
+$thinFontFill: #959595;
 
 *, h1 {
     margin: 0;
@@ -12,15 +15,29 @@ body {
     background-color: $darker;
 }
 
+.wrapper {
+    max-width: 1200px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.colorAccent {
+    color: $accentColor;
+}
 
 li {
     list-style: none;
 }
 
-button {
-    color: $accentColor;
+.button {
     background-color: rgba($color: #000000, $alpha: 0);
-    border: 2px solid $accentColor;
+    border: 4px solid $accentColor;
     padding: 5px 10px;
     text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: $accentColor;
+        color: $fontFill;
 }

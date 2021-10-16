@@ -3,26 +3,30 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
+    padding: 0 5%;
 }
 
 .title, .intro {
+    padding-top: 25px;
     width: 300px;
     height: 80vh;
 }
 
 .heroImage {
-    height: 80vh;
+    height: 85vh;
     width: calc(100% - 600px);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: end;
+
+    img {
+        height: 100%;
+    }
 }
 
-
-
 .circle {
-    background-color: $darkFill;
+    background-color: $accentColor;
     width: 500px;
     height: 500px;
     border-radius: 50%;

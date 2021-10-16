@@ -1,13 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@400;700&display=swap');
 
 $primary: 'Open Sans', sans-serif;
 $secondary: 'Nunito', sans-serif;
-$fontFill: #DADADA;
+
 
 html {
     font-size: 125%;
     font-family: $primary;
     color: $fontFill;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+
+
+h3 {
+    font-size: 1.3rem;
+    color: $accentColor;
+}
+
+h4 {
+    font-size: 3rem;
+    font-weight: 400;
 }
 
 a {
@@ -17,4 +34,5 @@ a {
 
 p {
     font-family: $secondary;
+    color: $thinFontFill;
 }
