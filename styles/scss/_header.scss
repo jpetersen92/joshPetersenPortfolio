@@ -1,9 +1,31 @@
+header {
+    h1, h4, p {
+        margin-bottom: 30px;
+    }
+    h2 {
+        margin-bottom: 60px;
+    }
+}
+
 .hero {
     height: calc(100vh - 50px);
     display: flex;
     justify-content: space-between;
     align-items: end;
     padding: 0 5%;
+
+    .contactButton{
+        background-color: rgba($color: #000000, $alpha: 0);
+        border: 4px solid $accentColor;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+    
+    .contactButton:hover {
+        background-color: $accentColor;
+            color: $fontFill;
+    }
 }
 
 .title, .intro {

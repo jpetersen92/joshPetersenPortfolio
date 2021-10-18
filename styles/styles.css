@@ -259,20 +259,6 @@ li {
   list-style: none;
 }
 
-.button {
-  background-color: rgba(0, 0, 0, 0);
-  border: 4px solid #800000;
-  padding: 5px 10px;
-  text-transform: uppercase;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.button:hover {
-  background-color: #800000;
-  color: #DADADA;
-}
-
 html {
   font-size: 125%;
   font-family: "Open Sans", sans-serif;
@@ -282,6 +268,10 @@ html {
 h1 {
   font-size: 4.5rem;
   font-weight: 700;
+}
+
+h2 {
+  font-size: 1.3rem;
 }
 
 h3 {
@@ -302,6 +292,10 @@ a {
 p {
   font-family: "Nunito", sans-serif;
   color: #959595;
+}
+
+.about, .portfolio, .contact {
+  text-align: center;
 }
 
 nav {
@@ -337,6 +331,17 @@ nav ul a:hover {
   height: 100%;
 }
 
+.fa {
+  font-size: 1.2rem;
+}
+
+header h1, header h4, header p {
+  margin-bottom: 30px;
+}
+header h2 {
+  margin-bottom: 60px;
+}
+
 .hero {
   height: calc(100vh - 50px);
   display: -webkit-box;
@@ -349,6 +354,18 @@ nav ul a:hover {
       -ms-flex-align: end;
           align-items: end;
   padding: 0 5%;
+}
+.hero .contactButton {
+  background-color: rgba(0, 0, 0, 0);
+  border: 4px solid #800000;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.hero .contactButton:hover {
+  background-color: #800000;
+  color: #DADADA;
 }
 
 .title, .intro {
