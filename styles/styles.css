@@ -461,7 +461,7 @@ header h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
+  width: 80%;
   height: 500px;
   margin: 30px;
 }
@@ -495,6 +495,8 @@ header h2 {
   background-color: #B8B7B7;
   margin-bottom: 20px;
   padding: 10px 10px 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .content img {
   height: 95%;
@@ -505,6 +507,25 @@ header h2 {
 }
 .content p a {
   color: #2B2B34;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.content p a:hover {
+  color: #800000;
+}
+
+.content:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.contentThree {
+  height: 60%;
+}
+
+.contentFour {
+  height: 40%;
 }
 
 .contentFive {

@@ -6,7 +6,7 @@
 
 .projectGallery {
     display: flex;
-    width: 70%;
+    width: 80%;
     height: 500px;
     margin: 30px ;
 }
@@ -33,6 +33,7 @@
     background-color: #B8B7B7;
     margin-bottom: 20px;
     padding: 10px 10px 5px;
+    transition: 0.3s;
 
     img {
         height: 95%;
@@ -44,8 +45,25 @@
 
         a {
             color: $darkFill;
+            transition: 0.3s;
+        }
+        a:hover {
+            color: $accentColor;
         }
     }
+}
+
+.content:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.contentThree {
+    height: 60%;
+}
+
+.contentFour {
+    height: 40%;
 }
 
 .contentFive {
