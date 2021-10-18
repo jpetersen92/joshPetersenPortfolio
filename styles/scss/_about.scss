@@ -1,3 +1,16 @@
 .about {
-    background-color: $lighter;
+    p {
+        margin-top: 25px;
+    }
+}
+
+.imageGallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    img {
+        width: 25%;
+        margin: 0 5px;
+    }
 }
