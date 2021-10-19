@@ -1,14 +1,16 @@
 .skills {
+
     ul {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin-top: 30px;
+        max-width: 800px;
 
         li {
             margin: 20px 0;
-            width: 180px;
+            width: 200px;
             height: 100px;
 
             .fas, .fab {
@@ -26,4 +28,10 @@
             }
         }
     }
+}
+
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

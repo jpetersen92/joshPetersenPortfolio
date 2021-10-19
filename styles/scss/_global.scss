@@ -11,6 +11,10 @@ $thinFontFill: #959595;
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 section {
     padding: 50px 0;
 }
@@ -20,7 +24,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 1400px;
     width: 65%;
     margin: 0 auto;
 }

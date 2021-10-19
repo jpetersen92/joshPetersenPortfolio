@@ -8,11 +8,13 @@ header {
 }
 
 .hero {
+    max-width: 1600px;
     height: calc(100vh - 80px);
     display: flex;
     justify-content: space-between;
     align-items: end;
     padding: 0 5%;
+    margin: 0 auto;
 }
 
 .title, .intro {

@@ -241,6 +241,10 @@ html {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   padding: 50px 0;
 }
@@ -250,7 +254,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 65%;
   margin: 0 auto;
 }
@@ -365,6 +369,7 @@ header h2 {
 }
 
 .hero {
+  max-width: 1600px;
   height: calc(100vh - 80px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -376,6 +381,7 @@ header h2 {
       -ms-flex-align: end;
           align-items: end;
   padding: 0 5%;
+  margin: 0 auto;
 }
 
 .title, .intro {
@@ -478,7 +484,7 @@ header h2 {
       -ms-flex-align: center;
           align-items: center;
   height: 50%;
-  background-color: #B8B7B7;
+  background-color: rgba(184, 183, 183, 0.5);
   margin-bottom: 20px;
   padding: 10px 10px 5px;
   -webkit-transition: 0.3s;
@@ -531,10 +537,11 @@ header h2 {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-top: 30px;
+  max-width: 800px;
 }
 .skills ul li {
   margin: 20px 0;
-  width: 180px;
+  width: 200px;
   height: 100px;
 }
 .skills ul li .fas, .skills ul li .fab {
@@ -550,6 +557,19 @@ header h2 {
   font-size: 0.8rem;
 }
 
+.skillsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,7 +580,7 @@ form {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #DADADA;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .userInfo {
