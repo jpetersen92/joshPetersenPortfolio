@@ -15,9 +15,12 @@ header {
     align-items: end;
     padding: 0 5%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .title, .intro {
+    display: flex;
+    flex-direction: column;
     padding-top: 25px;
     width: 300px;
     height: 80vh;
@@ -44,4 +47,13 @@ header {
     position: absolute;
     top: 50px;
     z-index: -1;
+}
+
+.smallTitle {
+    display: none;
+    margin-bottom: 30px;
+}
+
+.fa-bars {
+    font-size: 1.7rem;
 }

@@ -1,4 +1,35 @@
-.hidden {
-    display: none;
+@media(max-width: 1185px) {
+    .intro {
+        h4 {
+            font-size: 2rem;
+        }
+        a {
+            text-align: center;
+        }
+    }
+    .skills ul li {
+        width: 150px;
+    }
 }
 
+@media(max-width: 1110px) {
+    .intro {
+        display: none;
+    }
+    .smallTitle {
+        display: inline-block;
+    }
+}
+
+@media(max-width:790px) {
+    nav ul {
+        display: none;
+    }
+    .mobile {
+        display: inline-block;
+    }
+
+    .skills ul li {
+        width: 100px;
+    }
+}

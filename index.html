@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josh Petersen</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8e7f7f44c9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav>
             <img class="logo" src="./assets/whiteLogo.png" alt="Josh Petersen Codes Logo">
-            <div class="mobileMenu hidden">
+            <div class="mobile">
                 <i class="fas fa-bars"></i>
             </div>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <!-- <li><a href="#">Fun</a></li> -->
                 <li><a href="#contact">Contact</a></li>
                 <li>|</li>
                 <li>
@@ -33,6 +33,7 @@
         <div class="hero">
             <div class="title">
                 <h1>Josh<br>Petersen</h1>
+                <h2 class="smallTitle">Front-End Web Developer</h2>
                 <div class="socialLinks">
                     <h2>
                         <a class="colorAccent" href="https://www.facebook.com/jpetersen11/">Facebook</a>|<a href="https://www.linkedin.com/in/josh-petersen-8a306219a/">LinkedIn</a><br>
@@ -71,40 +72,93 @@
                     <img src="./assets/family.jpg" alt="Family photo of Josh, Cally & baby Rae Rae.">
                     <img src="./assets/sup.jpg" alt="Josh holding his paddle board on the beach looking out into the ocean.">
                 </div>
+
             </div>
         </section>
         <section id="portfolio" class="portfolio">
             <div class="wrapper">
                 <h3>Portfolio</h3>
                 <h4>Check Out My Work</h4>
-                <p>Click any project to learn more</p>
             </div>
             <div class="projectGallery">
-                <div class="column columnOne">
                     <div class="content contentOne">
-                        <img src="./assets/portOne.png" alt="">
-                        <p><a href="https://competent-swanson-e1854f.netlify.app/">Live</a> | <a href="https://github.com/jpetersen92/josh-petersen-project-3">Repo</a></p>
+                        <div class="descriptionContainer">
+                            <h3>React Jack</h3>
+                            <ul>
+                                <li><i class="fab fa-react"></i></li>
+                                <li><i class="fas fa-project-diagram"></i></li>
+                                <li><i class="fab fa-css3-alt"></i></li>
+                            </ul>
+                            <p>Blackjack game build with react and using the Deck Of Cards api to manage the deck.</p>
+                            <p><a href="https://competent-swanson-e1854f.netlify.app/">Live</a> | <a href="https://github.com/jpetersen92/josh-petersen-project-3">Repo</a></p>
+                        </div>
+                        <div class="imageContainer">
+                            <img src="./assets/portOne.png" alt="">
+                        </div>
                     </div>
                     <div class="content contentTwo">
-                        <img src="./assets/portTwo.png" alt="">
-                        <p><a href="https://jpetersen92.github.io/drink-o-matic/">Live</a> | <a href="https://github.com/jpetersen92/drink-o-matic">Repo</a></p>
+                        <div class="imageContainer">
+                            <img src="./assets/portTwo.png" alt="">
+                        </div>
+                        <div class="descriptionContainer">
+                            <h3>Drink-O-Matic</h3>
+                            <ul>
+                                <li><i class="fab fa-js-square"></i></li>
+                                <li><i class="fas fa-project-diagram"></i></li>
+                                <li><i class="fab fa-html5"></i></li>
+                                <li><i class="fab fa-css3-alt"></i></li>
+                            </ul>
+                            <p>This is a Javascript app that using an api call to display a random cocktail recipe</p>
+                            <p><a href="https://jpetersen92.github.io/drink-o-matic/">Live</a> | <a href="https://github.com/jpetersen92/drink-o-matic">Repo</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="column columnTwo">
                     <div class="content contentThree">
-                        <img src="./assets/portThree.png" alt="">
-                        <p><a href="https://makeup-to-art.netlify.app/">Live</a> | <a href="https://github.com/makeup-to-art/makeup-to-art">Repo</a></p>
+                        <div class="descriptionContainer">
+                            <h3>Hue Are You?</h3>
+                            <ul>
+                                <li><i class="fab fa-react"></i></li>
+                                <li><i class="fas fa-project-diagram"></i></li>
+                                <li><i class="fab fa-css3-alt"></i></li>
+                                <li><i class="fas fa-code-branch"></i></li>
+                            </ul>
+                            <p>This app uses two api calls to get hex code information about the user's choice of makeup brand and then displays a dutch painting depending on the users color choice from their brand choice. This was a 4 person React project.</p>
+                            <p><a href="https://makeup-to-art.netlify.app/">Live</a> | <a href="https://github.com/makeup-to-art/makeup-to-art">Repo</a></p>
+                        </div>
+                        <div class="imageContainer">
+                            <img src="./assets/portThree.png" alt="">
+                        </div>
                     </div>
                     <div class="content contentFour">
-                        <img src="./assets/portFour.png" alt="">
-                        <p><a href="https://project-2-group-awesome.github.io/adpotionApp/">Live</a> | <a href="https://github.com/project-2-group-awesome/adpotionApp">Repo</a></p>
+                        <div class="imageContainer">
+                            <img src="./assets/portFour.png" alt="">
+                        </div>
+                        <div class="descriptionContainer">
+                            <h3>Best Friend Finder</h3>
+                            <ul>
+                                <li><i class="fab fa-js-square"></i></li>
+                                <li><i class="fas fa-project-diagram"></i></li>
+                                <li><i class="fas fa-code-branch"></i></li>
+                                <li><i class="fab fa-sass"></i></li>
+                                <li><i class="fab fa-html5"></i></li>
+                            </ul>
+                            <p>This app uses api calls to display animals available to adopt. We used error handling to filter when certain types of animals are unavailable at this time. This was a two person peer project.</p>
+                            <p><a href="https://project-2-group-awesome.github.io/adpotionApp/">Live</a> | <a href="https://github.com/project-2-group-awesome/adpotionApp">Repo</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="column columnThree">
                     <div class="content contentFive">
-                        <img class="port" src="./assets/portFive.png" alt="">
-                        <p><a href="https://jpetersen92.github.io/josh-petersen-project-one/">Live</a> | <a href="https://github.com/jpetersen92/josh-petersen-project-one">Repo</a></p>
-                    </div>
+                        <div class="descriptionContainer">
+                            <h3>Bar-One</h3>
+                            <ul>
+                                <li><i class="fab fa-html5"></i></li>
+                                <li><i class="fab fa-sass"></i></li>
+                                <li><i class="fab fa-js-square"></i></li>
+                            </ul>
+                            <p>This multi-page website of a swanky bar was created from a PSD conversion and is fully responsive. </p>
+                            <p><a href="https://jpetersen92.github.io/josh-petersen-project-one/">Live</a> | <a href="https://github.com/jpetersen92/josh-petersen-project-one">Repo</a></p>
+                        </div>
+                        <div class="imageContainer">
+                            <img class="port" src="./assets/portFive.png" alt="">
+                        </div>
                 </div>
             </div>
         </section>
@@ -203,5 +257,6 @@
         <p>© Josh Petersen | <i class="fab fa-rebel"></i></p>
     </footer>
     <script src="./app.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </body>
 </html>
