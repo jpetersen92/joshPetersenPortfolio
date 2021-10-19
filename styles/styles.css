@@ -418,8 +418,24 @@ header h2 {
   z-index: -1;
 }
 
-.about p {
+.bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bio p {
   margin-top: 25px;
+  width: 90%;
 }
 
 .imageGallery {
@@ -432,7 +448,7 @@ header h2 {
   margin-top: 50px;
 }
 .imageGallery img {
-  width: 25%;
+  width: 30%;
   margin: 0 5px;
 }
 
@@ -551,6 +567,8 @@ header h2 {
 }
 .skills ul li .fas:hover, .skills ul li .fab:hover {
   color: #800000;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .skills ul li p {
   margin-top: 10px;
@@ -651,4 +669,8 @@ input, textarea {
 footer {
   padding: 10px 0;
   border-top: 2px solid #800000;
+}
+
+.hidden {
+  display: none;
 }

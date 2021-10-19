@@ -1,6 +1,11 @@
-.about {
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     p {
         margin-top: 25px;
+        width: 90%;
     }
 }
 
@@ -10,7 +15,7 @@
     margin-top: 50px;
 
     img {
-        width: 25%;
+        width: 30%;
         margin: 0 5px;
     }
 }
