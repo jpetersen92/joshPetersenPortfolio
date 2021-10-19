@@ -68,7 +68,7 @@
             <div class="wrapper">
                 <h3>Portfolio</h3>
                 <h4>Check Out My Work</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus accusamus molestias architecto dolore unde, expedita iure labore nulla atque deleniti aut accusantium hic id vitae!</p>
+                <p>Click any project to learn more</p>
             </div>
             <div class="projectGallery">
                 <div class="column columnOne">
@@ -94,11 +94,66 @@
                 <div class="column columnThree">
                     <div class="content contentFive">
                         <img class="port" src="./assets/portFive.png" alt="">
-                        <p><a href="https://github.com/jpetersen92/josh-petersen-project-one">Live</a> | <a href="https://jpetersen92.github.io/josh-petersen-project-one/">Repo</a></p>
+                        <p><a href="https://jpetersen92.github.io/josh-petersen-project-one/">Live</a> | <a href="https://github.com/jpetersen92/josh-petersen-project-one">Repo</a></p>
                     </div>
                 </div>
             </div>
-
+        </section>
+        <section class="skills">
+            <div class="wrapper">
+                <h3>Skills</h3>
+                <h4>Here's My Toolkit</h4>
+                <ul>
+                    <li>
+                        <i class="fab fa-html5"></i>
+                        <p>HTML5</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-js-square"></i>
+                        <p>JAVASCRIPT + ES6</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-sass"></i>
+                        <p>SASS</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-code-branch"></i>
+                        <p>PEER PROGRAMING</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-project-diagram"></i>
+                        <p>REST APIS</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-react"></i>
+                        <p>REACT</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-fire-alt"></i>
+                        <p>FIREBASE</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-git-alt"></i>
+                        <p>GIT</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-node-js"></i>
+                        <p>NODE.JS</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>RESPONSIVE DESIGN</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-universal-access"></i>
+                        <p>ACCESSIBILITY</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section id="contact" class="contact">
             <div class="wrapper">
@@ -106,17 +161,27 @@
                 <h4>Get In Touch</h4>
                 <form action="#">
                     <div class="userInfo">
-                        <input type="text">
-                        <input type="email">
+                        <div class="userContainer">
+                            <label for="userName">Name</label>
+                            <input type="text" name="userName">
+                        </div>
+                        <div class="userContainer">
+                            <label for="userEmail">Email</label>
+                            <input type="email" name="userEmail">
+                        </div>
                     </div>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                    <textarea name="contact" id="contact" placeholder="Your Message Here"></textarea>
+
+                    <button class="colorAccent" type="submit">Send</button>
+
                 </form>
                 <div class="contactMethods">
                     <ul>
-                        <li><a href="#">hello@joshpetersencodes.com</a></li>
-                        <li><a href="#">778-232-1862</a></li>
-                        <li><a href="#">Calendly</a></li>
-                        <li><a href="https://twitter.com/joshdpetersen">@joshdpetersen</a></li>
+                        <li><i class="fas fa-inbox"></i> <a href="#">hello@joshpetersencodes.com</a></li>
+                        <li><i class="fas fa-mobile-alt"></i> <a href="#">778-232-1862</a></li>
+                        <li><i class="far fa-calendar"></i> <a href="#">Calendly</a></li>
+                        <li><i class="fa fa-twitter"> </i><a href="https://twitter.com/joshdpetersen">@joshdpetersen</a></li>
                     </ul>
                 </div>
             </div>

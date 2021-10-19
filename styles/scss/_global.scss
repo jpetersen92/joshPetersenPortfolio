@@ -33,22 +33,35 @@ li {
     list-style: none;
 }
 
-.about, .contact {
+.about, .skills {
     background-color: $lighter;
 }
 
-.hidden {
-    display: none;
+.contactButton, button{
+    background-color: rgba($color: #000000, $alpha: 0);
+    border: 4px solid $accentColor;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    transition: 0.3s;
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+.contactButton:hover, button:hover {
+    background-color: $accentColor;
+        color: $fontFill;
 }
+
+// .hidden {
+//     display: none;
+// }
+
+// .modal {
+//     display: none;
+//     position: fixed;
+//     z-index: 1;
+//     left: 0;
+//     top: 0;
+//     height: 100%;
+//     width: 100%;
+//     overflow: auto;
+//     background-color: rgba(0, 0, 0, 0.5);
+// }

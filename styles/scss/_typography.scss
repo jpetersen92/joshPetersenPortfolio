@@ -34,11 +34,11 @@ a {
     color: $fontFill;
 }
 
-p {
+p, input, textarea {
     font-family: $secondary;
     color: $thinFontFill;
 }
 
-.about, .portfolio, .contact, footer {
+.about, .portfolio,.skills, .contact, footer {
     text-align: center;
 }

@@ -263,24 +263,22 @@ li {
   list-style: none;
 }
 
-.about, .contact {
+.about, .skills {
   background-color: #34343B;
 }
 
-.hidden {
-  display: none;
+.contactButton, button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 4px solid #800000;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+.contactButton:hover, button:hover {
+  background-color: #800000;
+  color: #DADADA;
 }
 
 html {
@@ -313,12 +311,12 @@ a {
   color: #DADADA;
 }
 
-p {
+p, input, textarea {
   font-family: "Nunito", sans-serif;
   color: #959595;
 }
 
-.about, .portfolio, .contact, footer {
+.about, .portfolio, .skills, .contact, footer {
   text-align: center;
 }
 
@@ -367,7 +365,7 @@ header h2 {
 }
 
 .hero {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 80px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,18 +376,6 @@ header h2 {
       -ms-flex-align: end;
           align-items: end;
   padding: 0 5%;
-}
-.hero .contactButton {
-  background-color: rgba(0, 0, 0, 0);
-  border: 4px solid #800000;
-  padding: 5px 10px;
-  text-transform: uppercase;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.hero .contactButton:hover {
-  background-color: #800000;
-  color: #DADADA;
 }
 
 .title, .intro {
@@ -461,8 +447,8 @@ header h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
   height: 500px;
+  width: 80%;
   margin: 30px;
 }
 
@@ -530,6 +516,116 @@ header h2 {
 
 .contentFive {
   height: calc(100% + 20px);
+}
+
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 30px;
+}
+.skills ul li {
+  margin: 20px 0;
+  width: 180px;
+  height: 100px;
+}
+.skills ul li .fas, .skills ul li .fab {
+  font-size: 3rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.skills ul li .fas:hover, .skills ul li .fab:hover {
+  color: #800000;
+}
+.skills ul li p {
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #DADADA;
+  margin-top: 50px;
+}
+
+.userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.userContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50%;
+}
+.userContainer input {
+  margin-top: 10px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 85%;
+  border: none;
+  border-bottom: 3px solid #800000;
+}
+
+textarea {
+  width: 100%;
+  margin: 50px 0 20px;
+  padding: 10px;
+  border: 3px solid #800000;
+  height: 200px;
+  resize: none;
+}
+
+input, textarea {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+}
+
+.contactMethods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.contactMethods ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contactMethods ul li {
+  margin-left: 50px;
+}
+.contactMethods ul li a {
+  margin-left: 5px;
 }
 
 footer {
