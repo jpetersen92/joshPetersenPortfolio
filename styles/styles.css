@@ -719,8 +719,12 @@ footer {
     display: inline-block;
   }
 
-  .heroImage {
+  .heroImage, .title {
     height: 100%;
+  }
+
+  .title {
+    padding-top: 150px;
   }
 
   .content {
