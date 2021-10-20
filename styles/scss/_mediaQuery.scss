@@ -34,6 +34,10 @@
         display: inline-block;
     }
 
+    .heroImage {
+        height: 100%;
+    }
+
     .content {
         flex-direction: column;
         .imageContainer {
@@ -83,13 +87,31 @@
     }
 }
 
-@media(max-width: 479px) {
+@media(max-width: 505px) {
+
+    nav {
+        margin: 0 15px 0 10px;
+    }
 
     .heroImage {
-        right: -55px;
+        right: -60px;
     }
 
     p {
         font-size: 0.9rem;
     }
+}
+
+@media(max-width: 440px) {
+
+    .title {
+        width: 70%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .title h2:last-of-type {
+        font-size: 0.8rem;
+    }
+
 }
