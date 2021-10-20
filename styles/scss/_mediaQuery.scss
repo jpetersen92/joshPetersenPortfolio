@@ -27,11 +27,42 @@
         width: 90%;
     }
 
-    nav ul {
-        display: none;
+    #sidebar {
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        height: 100vh;
+        width: 130px;
+        background-color: $accentColor;
+        padding: 60px 30px;
+        top: 0;
+        right: -130px;
+        z-index: 5;
+        transition: 0.3s;
+
+        li {
+            margin-bottom: 25px;
+        }
+
+        .remove {
+            display: none;
+        }
     }
-    .mobile {
-        display: inline-block;
+
+    #sidebar.show {
+        right: 0;
+    }
+
+    .mobileNav {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        transition: 0.3s;
+    }
+
+    .mobileNav.show {
+        right: 150px;
     }
 
     .heroImage, .title {

@@ -1,4 +1,6 @@
 header {
+    position: relative;
+    overflow: hidden;
     h1, h4, p {
         margin-bottom: 30px;
     }
@@ -6,6 +8,8 @@ header {
         margin-bottom: 60px;
     }
 }
+
+
 
 .hero {
     max-width: 1600px;
@@ -34,11 +38,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: end;
-
+    transition: 0.3s;
+    
     img {
         height: 100%;
     }
 }
+
+// .expandHero {
+//     right: 130px;
+// }
 
 .circle {
     background-color: $accentColor;

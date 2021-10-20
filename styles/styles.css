@@ -286,10 +286,6 @@ li {
   color: #DADADA;
 }
 
-.mobile {
-  display: none;
-}
-
 .socialIcons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,6 +368,14 @@ nav ul a:hover {
   font-size: 1.2rem;
 }
 
+.mobileNav {
+  display: none;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+}
 header h1, header h4, header p {
   margin-bottom: 30px;
 }
@@ -422,6 +426,8 @@ header h2 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .heroImage img {
   height: 100%;
@@ -719,12 +725,49 @@ footer {
     width: 90%;
   }
 
-  nav ul {
+  #sidebar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    position: absolute;
+    height: 100vh;
+    width: 130px;
+    background-color: #800000;
+    padding: 60px 30px;
+    top: 0;
+    right: -130px;
+    z-index: 5;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #sidebar li {
+    margin-bottom: 25px;
+  }
+  #sidebar .remove {
     display: none;
   }
 
-  .mobile {
-    display: inline-block;
+  #sidebar.show {
+    right: 0;
+  }
+
+  .mobileNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .mobileNav.show {
+    right: 150px;
   }
 
   .heroImage, .title {
