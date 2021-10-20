@@ -507,6 +507,7 @@ header h2 {
       -ms-flex-align: center;
           align-items: center;
   background-color: #34343B;
+  overflow: hidden;
 }
 .content .imageContainer {
   width: 50%;
