@@ -7,12 +7,19 @@
         margin-top: 25px;
         width: 90%;
     }
+
+    .resume {
+        margin-top: 30px;
+    }
+    .resume:hover {
+        background-color: $accentColor;
+    }
 }
 
 .imageGallery {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
 
     img {
         width: 30%;

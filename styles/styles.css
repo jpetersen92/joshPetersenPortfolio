@@ -272,7 +272,7 @@ li {
   background-color: #34343B;
 }
 
-.contactButton, button {
+.contactButton, button, .resume {
   background-color: rgba(0, 0, 0, 0);
   border: 4px solid #800000;
   padding: 5px 10px;
@@ -482,6 +482,12 @@ header h2 {
   margin-top: 25px;
   width: 90%;
 }
+.bio .resume {
+  margin-top: 30px;
+}
+.bio .resume:hover {
+  background-color: #800000;
+}
 
 .imageGallery {
   display: -webkit-box;
@@ -490,7 +496,7 @@ header h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .imageGallery img {
   width: 30%;
