@@ -22,6 +22,11 @@
 }
 
 @media(max-width:790px) {
+
+    .wrapper {
+        width: 90%;
+    }
+
     nav ul {
         display: none;
     }
@@ -29,7 +34,62 @@
         display: inline-block;
     }
 
-    .skills ul li {
-        width: 100px;
+    .content {
+        flex-direction: column;
+        .imageContainer {
+            width: 100%;
+        }
+
+        .descriptionContainer {
+        width: 100%;
+            li {
+                margin: 0 5px;
+        
+                .fab, .fas {
+                    font-size: 1.1rem;
+                }
+            }
+    
+            p {
+                width: 100%;
+            }
+        }
+        
+    
+        .skills ul li {
+            width: 100px;
+    
+            .fab, .fas {
+                font-size: 2rem;
+            }
+    
+            p {
+                font-size: 0.6rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 625px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+
+    .logo {
+        height: 80%;
+    }
+}
+
+@media(max-width: 479px) {
+
+    .heroImage {
+        right: -55px;
+    }
+
+    p {
+        font-size: 0.9rem;
     }
 }
