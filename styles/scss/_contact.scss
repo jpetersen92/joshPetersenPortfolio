@@ -40,13 +40,14 @@ input, textarea {
 }
 
 .contactMethods {
-    display: flex;
-    justify-content: end;
     ul {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         li {
-            margin-left: 50px;
+            margin: 10px 10px 0;
+            padding: 10px;
+            background-color: $lighter;
             a {
                 margin-left: 5px;
             }

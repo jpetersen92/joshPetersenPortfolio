@@ -669,23 +669,20 @@ input, textarea {
   border-radius: 0;
 }
 
-.contactMethods {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
 .contactMethods ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .contactMethods ul li {
-  margin-left: 50px;
+  margin: 10px 10px 0;
+  padding: 10px;
+  background-color: #34343B;
 }
 .contactMethods ul li a {
   margin-left: 5px;
@@ -805,6 +802,10 @@ footer {
   }
 
   .title h2:last-of-type {
+    font-size: 0.8rem;
+  }
+
+  .contactMethods li {
     font-size: 0.8rem;
   }
 }
