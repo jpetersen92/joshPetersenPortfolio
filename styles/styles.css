@@ -446,6 +446,17 @@ header h2 {
   font-size: 1.7rem;
 }
 
+.title h2:last-of-type {
+  line-height: 1.3rem;
+}
+.title h2:last-of-type a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.title h2:last-of-type a:hover {
+  text-decoration: underline;
+}
+
 .bio {
   display: -webkit-box;
   display: -ms-flexbox;

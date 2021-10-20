@@ -26,6 +26,7 @@ header {
     height: 80vh;
 }
 
+
 .heroImage {
     height: 85vh;
     width: calc(100% - 600px);
@@ -56,4 +57,16 @@ header {
 
 .fa-bars {
     font-size: 1.7rem;
+}
+
+.title h2:last-of-type {
+    line-height: 1.3rem;
+
+    a {
+        transition: 0.3s;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
