@@ -858,3 +858,68 @@ footer {
     font-size: 0.8rem;
   }
 }
+.darkMode {
+  background-color: #DADADA;
+  color: #2E2E35;
+}
+.darkMode a {
+  color: #2E2E35;
+}
+.darkMode .about, .darkMode .skills {
+  background-color: #959595;
+}
+
+.switch {
+  position: fixed;
+  top: 22px;
+  left: 10px;
+  height: 40px;
+  width: 26px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #DADADA;
+  border-style: 3px solid #DADADA;
+  -webkit-box-shadow: 1px 1px 1px #000;
+          box-shadow: 1px 1px 1px #000;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 2.5px;
+  background-color: #2B2B34;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.switch input {
+  display: none;
+}
+
+input:checked + .slider {
+  background-color: #2E2E35;
+}
+
+input:checked + .slider::before {
+  -webkit-transform: translateY(14px);
+          transform: translateY(14px);
+  background-color: #800000;
+}
+
+.slider.round {
+  border-radius: 35px;
+}
+
+.slider.round::before {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
