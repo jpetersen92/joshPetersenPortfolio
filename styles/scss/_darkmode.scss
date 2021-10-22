@@ -1,22 +1,35 @@
-.darkMode {
-    background-color: $fontFill;
-    color: $darker;
+.darkHide {
+    display: none;
+}
 
-    a {
+.darkMode {
+    background-color: #fff;
+    color: $darkFill;
+
+    a, input, textarea, form {
+        color: $darkFill;
+    }
+
+    p {
         color: $darker;
     }
 
-    .about, .skills {
-        background-color: $thinFontFill;
+    .about, .skills, .content, .contactMethods ul li, footer {
+        background-color: $fontFill;
+    }
+
+
+    .colorAccent {
+        color: $accentColor;
     }
 }
 
 .switch {
-    position: fixed;
-    top: 22px;
-    left: 10px;
-    height: 40px;
-    width: 26px;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    width: 40px;
+    height: 26px;
 }
 
 .slider {
@@ -46,7 +59,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider::before {
-    transform:  translateY(14px);
+    transform:  translateX(14px);
     background-color: $accentColor;
 }
 
