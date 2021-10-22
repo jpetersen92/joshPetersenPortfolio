@@ -12,7 +12,8 @@
 <body>
     <header>
         <nav>
-            <img class="logo" src="./assets/whiteLogo.png" alt="Josh Petersen Codes Logo">
+            <img id="darkLogo" class="logo" src="./assets/whiteLogo.png" alt="Josh Petersen Codes Logo">
+            <img id="liteLogo" class="logo darkHide" src="./assets/liteLogo.png" alt="Josh Petersen Codes Logo">
             
             <div class="mobileNav">
                 <i class="fas fa-bars"></i>
@@ -31,6 +32,12 @@
                 </li>
             </ul>
         </nav>
+        <div class="darkSwitch">
+            <label class="switch">
+                <input type="checkbox" name="darkMode" id="darkmode">
+                <span class="slider round"></span>
+            </label>
+        </div>
         <div class="hero">
             <div class="title" data-aos="fade-right"  data-aos-duration="1500">
                 <h1>Josh<br>Petersen</h1>
@@ -54,6 +61,7 @@
             </div>
         </div>
     </header>
+    <!-- Link Resume -->
     <main>
         <section id="about" class="about">
             <div class="wrapper">

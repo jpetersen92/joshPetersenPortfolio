@@ -42,6 +42,7 @@
 
         li {
             margin-bottom: 25px;
+            margin-right: 5px;
         }
 
         .remove {
@@ -106,6 +107,11 @@
                 font-size: 0.6rem;
             }
         }
+    }
+
+    .switch {
+        top: 60px;
+        right: 15px;
     }
 }
 

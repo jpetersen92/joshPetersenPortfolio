@@ -268,7 +268,7 @@ li {
   list-style: none;
 }
 
-.about, .skills {
+.about, .skills, .content, .contactMethods ul li {
   background-color: #34343B;
 }
 
@@ -529,7 +529,6 @@ header h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #34343B;
   overflow: hidden;
 }
 .content .imageContainer {
@@ -694,7 +693,6 @@ input, textarea {
 .contactMethods ul li {
   margin: 10px 10px 0;
   padding: 10px;
-  background-color: #34343B;
 }
 .contactMethods ul li a {
   margin-left: 5px;
@@ -703,6 +701,82 @@ input, textarea {
 footer {
   padding: 10px 0;
   border-top: 2px solid #800000;
+}
+
+.darkHide {
+  display: none;
+}
+
+.darkMode {
+  background-color: #fff;
+  color: #2B2B34;
+}
+.darkMode a, .darkMode input, .darkMode textarea, .darkMode form {
+  color: #2B2B34;
+}
+.darkMode p {
+  color: #2E2E35;
+}
+.darkMode .about, .darkMode .skills, .darkMode .content, .darkMode .contactMethods ul li, .darkMode footer {
+  background-color: #DADADA;
+}
+.darkMode .colorAccent {
+  color: #800000;
+}
+
+.switch {
+  position: absolute;
+  top: 70px;
+  right: 50px;
+  width: 40px;
+  height: 26px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #DADADA;
+  border-style: 3px solid #DADADA;
+  -webkit-box-shadow: 1px 1px 1px #000;
+          box-shadow: 1px 1px 1px #000;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 2.5px;
+  background-color: #2B2B34;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.switch input {
+  display: none;
+}
+
+input:checked + .slider {
+  background-color: #2E2E35;
+}
+
+input:checked + .slider::before {
+  -webkit-transform: translateX(14px);
+          transform: translateX(14px);
+  background-color: #800000;
+}
+
+.slider.round {
+  border-radius: 35px;
+}
+
+.slider.round::before {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
 @media (max-width: 1185px) {
@@ -752,6 +826,7 @@ footer {
   }
   #sidebar li {
     margin-bottom: 25px;
+    margin-right: 5px;
   }
   #sidebar .remove {
     display: none;
@@ -813,6 +888,11 @@ footer {
   }
   .content .skills ul li p {
     font-size: 0.6rem;
+  }
+
+  .switch {
+    top: 60px;
+    right: 15px;
   }
 }
 @media (max-width: 625px) {

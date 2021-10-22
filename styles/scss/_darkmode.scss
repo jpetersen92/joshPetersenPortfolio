@@ -1,0 +1,74 @@
+.darkHide {
+    display: none;
+}
+
+.darkMode {
+    background-color: #fff;
+    color: $darkFill;
+
+    a, input, textarea, form {
+        color: $darkFill;
+    }
+
+    p {
+        color: $darker;
+    }
+
+    .about, .skills, .content, .contactMethods ul li, footer {
+        background-color: $fontFill;
+    }
+
+
+    .colorAccent {
+        color: $accentColor;
+    }
+}
+
+.switch {
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    width: 40px;
+    height: 26px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: $fontFill;
+    border-style: 3px solid $fontFill;
+    box-shadow: 1px 1px 1px #000;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 2.5px;
+    background-color: $darkFill;
+    transition: 0.5s;
+}
+
+.switch input { 
+    display: none;
+}
+
+input:checked + .slider {
+    background-color: $darker;
+}
+
+input:checked + .slider::before {
+    transform:  translateX(14px);
+    background-color: $accentColor;
+}
+
+.slider.round {
+    border-radius: 35px;
+}
+
+.slider.round::before {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
