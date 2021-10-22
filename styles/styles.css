@@ -251,6 +251,8 @@ section {
 
 body {
   background-color: #2E2E35;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .wrapper {
@@ -296,6 +298,8 @@ html {
   font-size: 125%;
   font-family: "Open Sans", sans-serif;
   color: #DADADA;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 h1 {
@@ -463,6 +467,62 @@ header h2 {
   text-decoration: underline;
 }
 
+.intro {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.learn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #800000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.learn:hover .fa-chevron-down {
+  -webkit-animation: point 1s infinite;
+          animation: point 1s infinite;
+}
+
+@-webkit-keyframes point {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes point {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .bio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -780,6 +840,11 @@ input:checked + .slider::before {
 }
 
 @media (max-width: 1185px) {
+  .intro {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .intro h4 {
     font-size: 2rem;
   }
