@@ -4,14 +4,14 @@
 
 .darkMode {
     background-color: #fff;
-    color: $darkFill;
+    color: #000;
 
-    a, input, textarea, form {
-        color: $darkFill;
+    a, input, textarea, form, button {
+        color: #000;
     }
 
     p {
-        color: $darker;
+        color: #000;
     }
 
     .about, .skills, .content, .contactMethods ul li, footer {
@@ -55,7 +55,7 @@
 }
 
 input:checked + .slider {
-    background-color: $darker;
+    background-color: #000;
 }
 
 input:checked + .slider::before {

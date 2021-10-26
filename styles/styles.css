@@ -263,7 +263,7 @@ body {
 }
 
 .colorAccent {
-  color: #800000;
+  color: #970000;
 }
 
 li {
@@ -276,16 +276,17 @@ li {
 
 .contactButton, button, .resume {
   background-color: rgba(0, 0, 0, 0);
-  border: 4px solid #800000;
+  color: #DADADA;
+  border: 4px solid #970000;
   padding: 5px 10px;
   text-transform: uppercase;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.contactButton:hover, button:hover {
-  background-color: #800000;
-  color: #DADADA;
+.contactButton:hover, button:hover, .resume:hover,
+.contactButton:focus, button:focus, .resume:focus {
+  background-color: #970000;
 }
 
 .socialIcons {
@@ -313,7 +314,7 @@ h2 {
 
 h3 {
   font-size: 1.3rem;
-  color: #800000;
+  color: #970000;
 }
 
 h4 {
@@ -361,7 +362,7 @@ nav ul a {
   transition: 0.3s;
 }
 nav ul a:hover {
-  color: #800000;
+  color: #970000;
 }
 
 .logo {
@@ -484,7 +485,7 @@ header h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #800000;
+  color: #970000;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -546,7 +547,7 @@ header h2 {
   margin-top: 30px;
 }
 .bio .resume:hover {
-  background-color: #800000;
+  background-color: #970000;
 }
 
 .imageGallery {
@@ -632,7 +633,7 @@ header h2 {
   transition: 0.3s;
 }
 .content .descriptionContainer a:hover {
-  color: #800000;
+  color: #970000;
   text-decoration: underline;
 }
 
@@ -662,7 +663,7 @@ header h2 {
   transition: 0.3s;
 }
 .skills ul li .fas:hover, .skills ul li .fab:hover {
-  color: #800000;
+  color: #970000;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -723,14 +724,14 @@ form {
       align-self: center;
   width: 85%;
   border: none;
-  border-bottom: 3px solid #800000;
+  border-bottom: 3px solid #970000;
 }
 
 textarea {
   width: 100%;
   margin: 50px 0 20px;
   padding: 10px;
-  border: 3px solid #800000;
+  border: 3px solid #970000;
   height: 200px;
   resize: none;
 }
@@ -760,7 +761,7 @@ input, textarea {
 
 footer {
   padding: 10px 0;
-  border-top: 2px solid #800000;
+  border-top: 2px solid #970000;
 }
 
 .darkHide {
@@ -769,19 +770,19 @@ footer {
 
 .darkMode {
   background-color: #fff;
-  color: #2B2B34;
+  color: #000;
 }
-.darkMode a, .darkMode input, .darkMode textarea, .darkMode form {
-  color: #2B2B34;
+.darkMode a, .darkMode input, .darkMode textarea, .darkMode form, .darkMode button {
+  color: #000;
 }
 .darkMode p {
-  color: #2E2E35;
+  color: #000;
 }
 .darkMode .about, .darkMode .skills, .darkMode .content, .darkMode .contactMethods ul li, .darkMode footer {
   background-color: #DADADA;
 }
 .darkMode .colorAccent {
-  color: #800000;
+  color: #970000;
 }
 
 .switch {
@@ -820,13 +821,13 @@ footer {
 }
 
 input:checked + .slider {
-  background-color: #2E2E35;
+  background-color: #000;
 }
 
 input:checked + .slider::before {
   -webkit-transform: translateX(14px);
           transform: translateX(14px);
-  background-color: #800000;
+  background-color: #970000;
 }
 
 .slider.round {
@@ -881,7 +882,7 @@ input:checked + .slider::before {
     position: absolute;
     height: 100vh;
     width: 130px;
-    background-color: #800000;
+    background-color: #970000;
     padding: 60px 30px;
     top: 0;
     right: -130px;
