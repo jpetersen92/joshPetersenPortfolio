@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua David</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/8e7f7f44c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="darkLogo" class="logo" src="./assets/whiteLogo.png" alt="Josh Petersen Codes Logo">
+            <img id="liteLogo" class="logo darkHide" src="./assets/liteLogo.png" alt="Josh Petersen Codes Logo">
+            
+            <div class="mobileNav">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="sidebar">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="remove">|</li>
+                <li>
+                    <div class="socialIcons">
+                    <li><a href="https://www.instagram.com/joshdpetersen/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/jpetersen92"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://twitter.com/joshdpetersen"><i class="fa fa-twitter"></i></a></li>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="darkSwitch">
+            <label class="switch">
+                <input type="checkbox" name="darkMode" id="darkmode">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="hero">
+            <div class="title" data-aos="fade-right"  data-aos-duration="1500">
+                <h1>Joshua<br>David</h1>
+                <h2 class="smallTitle">Singer Songwriter</h2>
+                <div class="socialLinks">
+                    <h2>
+                        <a class="colorAccent" href="https://www.facebook.com/jpetersen11/">Facebook</a>|<a href="https://www.linkedin.com/in/josh-petersen-8a306219a/">LinkedIn</a><br>
+                        <a href="https://open.spotify.com/artist/4BBh7Q1ubI7xSctAdDEaPv?si=EMh5Sj4BTUmwELTta-j1kQ">Spotify</a>|<a href="https://calendly.com/jdpetersen92/30min?back=1&month">Calendly</a>
+                    </h2>
+                    <a class="contactButton" href="#contact">Contact Me</a>
+                </div>
+            </div>
+            <div class="heroImage">
+                <img src="./assets/heroImage.png" alt="Josh Petersen Profile Picture" data-aos="fade-up" data-aos-duration="1000">
+                <div class="circle" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="550"></div>
+            </div>
+            <div class="intro" data-aos="fade-left"  data-aos-duration="1500">
+                <h4>Singer Songwriter</h4>
+                <p>I am developer with a passion for problem solving and responsive accessible creative design.</p>
+                <div class="learn">
+                    <a class="colorAccent" href="#about">Learn More</a>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <div class="wrapper">
+                <h3 data-aos="fade-up" data-aos-duration="1000">Bio</h3>
+                <h4 data-aos="fade-up" data-aos-duration="1000">About Me</h4>
+                <div class="bio">
+                    <p data-aos="fade-up" data-aos-duration="1000">Hello World! My name is Josh Petersen, I am a Front-end Web Developer based out of Vancouver, BC. I am also a Father, Husband, Musican and Creative. I recently graduated form Juno College’s immersive Web Development Bootcamp where I handed my skills in development and learned a lot about how it is to work as a team.</p>
+                    <p data-aos="fade-up" data-aos-duration="1000">I love building Web applications that are responsive but still hold lots of creative value. I am constantly learning and striving to make my work even more accessible.
+                    </p>
+                    <p data-aos="fade-up" data-aos-duration="1000">When I’m not coding you can find me hanging out with my wife and daughter, playing shows around BC, or out on the water on my paddle board. Oh ya and I am a HUGE Star Wars nerd (what’s your TK number?)
+                    </p>
+                    <a class="resume" href="./assets/resume.pdf" target="_blank" data-aos="fade-up" data-aos-duration="1000">Download Resume</a>
+                </div>
+                <div class="imageGallery">
+                    <img src="./assets/band.jpg" alt="The band, Dear One, posing majesticly under a bridge." data-aos="fade-up-right" data-aos-duration="1000">
+                    <img src="./assets/family.png" alt="Family photo of Josh, Cally & baby Rae Rae." data-aos="fade-up" data-aos-duration="1000">
+                    <img src="./assets/sup.jpg" alt="Josh holding his paddle board on the beach looking out into the ocean." data-aos="fade-up-left" data-aos-duration="1000">
+                </div>
+
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>© Josh Petersen | <i class="fab fa-rebel"></i></p>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
