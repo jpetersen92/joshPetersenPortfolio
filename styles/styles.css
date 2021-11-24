@@ -336,6 +336,67 @@ p, input, textarea {
   text-align: center;
 }
 
+.music-body .intro {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.media, #calendar, #booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.media h4, #calendar h4, #booking h4 {
+  margin-bottom: 50px;
+}
+
+.media .video-container {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.media .video-container .video {
+  width: calc(50% - 20px);
+  height: 275px;
+  margin: 10px;
+}
+
+#calendar iframe, #booking iframe {
+  max-width: 900px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+#calendar {
+  height: 800px;
+  background-color: #34343B;
+}
+
+#booking {
+  height: 1650px;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -840,67 +901,6 @@ input:checked + .slider::before {
   border-radius: 50%;
 }
 
-.music-body .intro {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.media, #calendar, #booking {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.media h4, #calendar h4, #booking h4 {
-  margin-bottom: 50px;
-}
-
-.media .video-container {
-  width: 75%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.media .video-container .video {
-  width: calc(50% - 20px);
-  height: 275px;
-  margin: 10px;
-}
-
-#calendar iframe, #booking iframe {
-  max-width: 900px;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-}
-
-#calendar {
-  height: 800px;
-  background-color: #34343B;
-}
-
-#booking {
-  height: 1650px;
-}
-
 @media (max-width: 1185px) {
   .intro {
     -webkit-box-align: center;
@@ -1020,6 +1020,10 @@ input:checked + .slider::before {
   .switch {
     top: 60px;
     right: 15px;
+  }
+
+  .media .video-container .video {
+    width: 100%;
   }
 }
 @media (max-width: 625px) {
