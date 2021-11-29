@@ -374,6 +374,7 @@ p, input, textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 .media .video-container .video {
   width: calc(50% - 20px);
@@ -394,7 +395,7 @@ p, input, textarea {
 }
 
 #booking {
-  height: 1650px;
+  height: 1710px;
 }
 
 nav {
@@ -1037,6 +1038,11 @@ input:checked + .slider::before {
 
   .logo {
     height: 80%;
+  }
+
+  .musicHero {
+    position: relative;
+    right: 100px;
   }
 }
 @media (max-width: 505px) {
