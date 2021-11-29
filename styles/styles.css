@@ -840,7 +840,7 @@ footer {
 .darkMode p {
   color: #000;
 }
-.darkMode .about, .darkMode .skills, .darkMode .content, .darkMode .contactMethods ul li, .darkMode footer {
+.darkMode .about, .darkMode .skills, .darkMode .content, .darkMode .contactMethods ul li, .darkMode footer, .darkMode #calendar {
   background-color: #DADADA;
 }
 .darkMode .colorAccent {
