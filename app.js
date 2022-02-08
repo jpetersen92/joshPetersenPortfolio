@@ -17,11 +17,15 @@ portApp.darkSwitch = () => {
     const checkbox = document.querySelector('input[name=darkMode]');
     const body = document.querySelector('body');
     const liteLogo = document.getElementById('liteLogo');
-    const darkLogo = document.getElementById('darkLogo')
+    const darkLogo = document.getElementById('darkLogo');
+    const eventsLite = document.getElementById('eventsLite');
+    const eventsDark = document.getElementById('eventsDark');
     checkbox.addEventListener('change', function() {
         body.classList.toggle('darkMode');
         liteLogo.classList.toggle('darkHide');
-        darkLogo.classList.toggle('darkHide')
+        darkLogo.classList.toggle('darkHide');
+        eventsLite.classList.toggle('darkHide');
+        eventsDark.classList.toggle('darkHide');
     })
 
 };

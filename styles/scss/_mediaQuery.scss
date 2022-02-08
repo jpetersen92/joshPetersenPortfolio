@@ -138,6 +138,10 @@
         position: relative;
         right: 100px;
     }
+
+    #booking {
+        height: 1800px;
+    }
 }
 
 @media(max-width: 505px) {
@@ -152,6 +156,10 @@
 
     p {
         font-size: 0.9rem;
+    }
+
+    #booking {
+        height: 1850px;
     }
 }
 
