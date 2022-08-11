@@ -4,6 +4,13 @@
 
 const portApp = {};
 
+portApp.loader = () => {
+    window.addEventListener('load', () => {
+        const loader = document.querySelector('.loader');
+        loader.classList.add('loaderFinish')
+    })
+}
+
 portApp.show = () => {
     const barMenuButton = document.querySelector('.mobileNav');
     const nav = document.getElementById('sidebar');
@@ -31,6 +38,7 @@ portApp.darkSwitch = () => {
 };
 
 portApp.init = () => {
+    portApp.loader();
     portApp.darkSwitch();
     portApp.show();
 }
